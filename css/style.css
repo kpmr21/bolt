@@ -1,0 +1,195 @@
+.backcolor-green{
+  background-color: #74cfae;
+}
+
+.backcolor-gray{
+  background-color: #f2f2f2;
+}
+
+/* header */
+.header{
+  position: relative;
+}
+
+.header-inner{
+  display: flex;
+  padding: 15px 0 15px 250px;
+}
+
+.fa-bolt{
+  font-size: 40px;
+  margin-right: 850px;
+}
+
+.header-contact{
+  font-size: 12px;
+  color: #fff;
+  padding: 14px 12px;
+  text-align: center;
+}
+
+.header-contact:hover{
+  color: #333;
+  transition: 0.3s ;
+}
+
+/* --header-- */
+
+/* main */
+.main-title{
+  text-align: center;
+  padding: 250px 0 0 0;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 90px;
+  color: #74cfae;
+}
+
+.main-title-inner{
+  font-size: 30px;
+  color: #c0c0c0;
+  padding: 20px 0 250px 0;
+}
+
+/* main section */
+
+.section-wrap{
+  background-color:  #74cfae;
+  padding-top: 50px;
+  display: flex;
+}
+
+.iphone-image{
+  padding: 0 50px;
+}
+
+.section-inner{
+  text-align: center;
+  color: #fff;
+}
+
+h2,h3,h4{
+  font-size: 24px;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-text{
+  font-size: 20px;
+}
+
+/* --main section-- */
+
+/* main article */
+.article-wrap{
+  text-align: center;
+}
+
+h3{
+  padding: 60px 0 40px 0;
+}
+
+.image-top{
+  padding-bottom: 80px;
+}
+
+.image-bottom{
+  padding-bottom: 90px;
+}
+
+.imageIn{
+  margin-right: 100px;
+}
+
+.article-bottom {
+  display:flex;
+  padding: 0 0 70px 350px;
+}
+
+.article-text{
+  width: 530px;
+}
+
+.Email{
+  color: #fff;
+  padding: 14px 20px;
+  width: 100px;
+  margin-left: 90px;
+}
+
+/* --main article-- */
+
+/* main section2 */
+.circle-section{
+  background-color: #4e4e4e; 
+  text-align: center;
+  padding: 70px;
+}
+
+h4{
+  color: #fff;
+}
+
+.circle-section-inner{
+  text-align: center;
+  display: flex;
+  padding-left: 130px;
+  padding-top: 50px;
+}
+
+.circle-section-content{
+  margin: 0 auto;
+  padding-right: 180px;
+  text-align: center;
+}
+
+.circle-text{
+  color: #fff;
+}
+
+/* --main section2-- */
+
+/* nav */
+.sns-nav{
+  padding: 200px 0;
+}
+
+.sns-inner{
+  text-align: center;
+} 
+
+.sns-icon{
+  color: #74cfae;
+  width: 185px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+.sns-icon:hover{
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* --nav-- */
+
+/* footer */
+.footer{
+  padding: 20px 0 25px 0;
+}
+
+.footer-inner{ 
+  color: #fff;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.fa-heart{
+  font-size: 16px
+}
+/* --footer-- */
