@@ -1,3 +1,4 @@
+/* 共通部分 */
 .backcolor-green{
   background-color: #74cfae;
 }
@@ -5,30 +6,27 @@
 .backcolor-gray{
   background-color: #f2f2f2;
 }
+/* --共通部分-- */
 
 /* header */
-.header{
-  position: relative;
-}
-
 .header-inner{
   display: flex;
-  padding: 15px 0 15px 250px;
+  justify-content: space-around;
+  padding: 15px 0;
 }
 
 .fa-bolt{
   font-size: 40px;
-  margin-right: 850px;
 }
 
 .header-contact{
   font-size: 12px;
   color: #fff;
   padding: 14px 12px;
-  text-align: center;
 }
 
 .header-contact:hover{
+  cursor: pointer;
   color: #333;
   transition: 0.3s ;
 }
@@ -38,49 +36,54 @@
 /* main */
 .main-title{
   text-align: center;
-  padding: 250px 0 0 0;
-}
-
-h1{
-  font-weight: 700;
-  font-size: 90px;
-  color: #74cfae;
 }
 
 .main-title-inner{
-  font-size: 30px;
-  color: #c0c0c0;
-  padding: 20px 0 250px 0;
+  padding: 250px 0;
 }
 
+h1{
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+h2{
+  font-size: 30px;
+  color: #c0c0c0;
+  padding-top: 20px;
+}
 /* main section */
 
 .section-wrap{
-  background-color:  #74cfae;
-  padding-top: 50px;
-  display: flex;
-}
-
-.iphone-image{
-  padding: 0 50px;
+ padding-top: 50px; 
 }
 
 .section-inner{
+  display: flex;
+  justify-content: center;
+}
+
+.iphone-image{
+  margin-right: 100px;
+}
+
+.section-textArea{
   text-align: center;
   color: #fff;
 }
 
-h2,h3,h4{
+h3,h4,h5{
   font-size: 24px;
 }
 
-h2{
-  text-align: center;
+h3{
   margin-bottom: 35px;
 }
 
 .section-text{
   font-size: 20px;
+  width: 750px;
 }
 
 /* --main section-- */
@@ -90,69 +93,85 @@ h2{
   text-align: center;
 }
 
-h3{
+h4{
   padding: 60px 0 40px 0;
-}
-
-.image-top{
-  padding-bottom: 80px;
-}
-
-.image-bottom{
-  padding-bottom: 90px;
 }
 
 .imageIn{
   margin-right: 100px;
+  margin-bottom: 80px;
+  opacity: 0.7;
+}
+
+.imageIn:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.imageIn:nth-child(3){
+  margin-right: 0;
+}
+
+.imageIn:last-child{
+  margin-right: 0;
+}
+
+.imageIn:nth-child(n+4){
+  margin-bottom: 0;
 }
 
 .article-bottom {
   display:flex;
-  padding: 0 0 70px 350px;
+  justify-content: center;
+  padding:90px 0 70px 0;
 }
 
 .article-text{
   width: 530px;
 }
 
-.Email{
+.e-mail{
   color: #fff;
   padding: 14px 20px;
   width: 100px;
   margin-left: 90px;
 }
 
+.e-mail:hover{
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s ;
+}
 /* --main article-- */
 
-/* main section2 */
-.circle-section{
-  background-color: #4e4e4e; 
-  text-align: center;
-  padding: 70px;
+/* main skills-section */
+.skills-section{
+background-color: #4e4e4e;
+text-align: center;
 }
 
-h4{
+h5{
   color: #fff;
+  padding-top: 70px;
 }
 
-.circle-section-inner{
-  text-align: center;
+.section-imageArea{
   display: flex;
-  padding-left: 130px;
-  padding-top: 50px;
+  justify-content: center;
+  padding: 50px 0 100px 0;
 }
 
-.circle-section-content{
-  margin: 0 auto;
-  padding-right: 180px;
-  text-align: center;
-}
-
-.circle-text{
+.skills-section-content{
+  margin-right: 180px;
   color: #fff;
+  font-size: 16px;
 }
 
-/* --main section2-- */
+.skills-section-content:last-child{
+  margin-right: 0;
+}
+/* --main skills-section-- */
 
 /* nav */
 .sns-nav{
@@ -167,13 +186,13 @@ h4{
   color: #74cfae;
   width: 185px;
   padding: 20px 0;
-  text-align: center;
   font-size: 50px;
 }
 
 .sns-icon:hover{
   cursor: pointer;
   background-color: #fff;
+  transition: 0.3s;
 }
 
 /* --nav-- */
