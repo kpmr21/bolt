@@ -1,4 +1,13 @@
 /* 共通部分 */
+body{
+  font-family: "Lato";
+}
+
+.inner{
+  margin: 0 auto;
+  width: 1100px;
+}
+
 .backcolor-green{
   background-color: #74cfae;
 }
@@ -6,12 +15,25 @@
 .backcolor-gray{
   background-color: #f2f2f2;
 }
+
+.common-fontsize{
+  font-size: 24px;
+}
+
+.hoverElement{
+  text-decoration: none;
+}
 /* --共通部分-- */
 
 /* header */
+.header{
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .header-inner{
-  display: flex;
-  justify-content: space-around;
   padding: 15px 0;
 }
 
@@ -19,14 +41,15 @@
   font-size: 40px;
 }
 
-.header-contact{
+.header-inner-contact{
   font-size: 12px;
   color: #fff;
   padding: 14px 12px;
+  float: right;
+  transition: 0.3s;
 }
 
-.header-contact:hover{
-  cursor: pointer;
+.header-inner-contact:hover{
   color: #333;
   transition: 0.3s ;
 }
@@ -42,21 +65,22 @@
   padding: 250px 0;
 }
 
-h1{
+.main-Innertitle{
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
 
-h2{
+.main-title-innerText{
+  font-family: "Raleway";
+  margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
-  padding-top: 20px;
 }
 /* main section */
 
 .section-wrap{
- padding-top: 50px; 
+ padding-top: 50px;
 }
 
 .section-inner{
@@ -73,17 +97,14 @@ h2{
   color: #fff;
 }
 
-h3,h4,h5{
-  font-size: 24px;
-}
-
-h3{
+.section-innerTitle{
   margin-bottom: 35px;
+  font-family: "Raleway";
 }
 
 .section-text{
   font-size: 20px;
-  width: 750px;
+  width: 650px;
 }
 
 /* --main section-- */
@@ -91,52 +112,47 @@ h3{
 /* main article */
 .article-wrap{
   text-align: center;
+  padding: 60px 0 70px 0;
+  font-family: "Raleway";
 }
 
-h4{
-  padding: 60px 0 40px 0;
+.article-innerTitle{
+  margin-bottom: 40px;
 }
 
-.imageIn{
+.article-image-wrap{
+display: flex;
+flex-wrap: wrap;
+}
+
+.article-imageContent{
   margin-right: 100px;
-  margin-bottom: 80px;
-  transition: 0.3s;
   opacity: 0.7;
+  transition: 0.3s;
 }
 
-.imageIn:hover{
-  cursor: pointer;
-  transition: 0.3s;
+.article-imageContent:hover{
   opacity: 1;
-}
-
-.imageIn:onMo{
-  cursor: pointer;
   transition: 0.3s;
-  opacity: 1;
 }
 
-.imageIn:nth-child(3){
+.article-imageContent:nth-child(3n){
   margin-right: 0;
 }
 
-.imageIn:last-child{
-  margin-right: 0;
-}
-
-.imageIn:nth-child(n+4){
-  margin-bottom: 0;
+.article-imageContent:nth-child(-n+3){
+  margin-bottom: 80px;
 }
 
 .article-bottom {
   display:flex;
   justify-content: center;
   margin-top: 90px;
-  padding-bottom: 70px;
 }
 
 .article-text{
-  width: 530px;
+  width: 500px;
+  height: 40px;
 }
 
 .e-mail{
@@ -144,31 +160,31 @@ h4{
   padding: 14px 20px;
   width: 100px;
   margin-left: 90px;
+  transition: 0.3s;
 }
 
 .e-mail:hover{
-  cursor: pointer;
   color: #333;
   transition: 0.3s ;
 }
 /* --main article-- */
 
 /* main skills-section */
-.skills-section{
-background-color: #4e4e4e;
-text-align: center;
+.skills-section-wrap{
+  background-color: #4e4e4e;
+  padding: 70px 0 100px 0;
+  text-align: center;
 }
 
-h5{
+.skills-section-innerTitle{
   color: #fff;
-  padding-top: 70px;
+  font-family: "Raleway";
 }
 
 .section-imageArea{
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  padding-bottom: 100px;
 }
 
 .skills-section-content{
@@ -189,21 +205,22 @@ h5{
 
 .sns-inner{
   text-align: center;
-} 
-
-.sns-icon{
-  color: #74cfae;
-  width: 185px;
-  padding: 20px 0;
-  font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.sns-icon:hover{
-  cursor: pointer;
-  background-color: #fff;
+.sns-icon{
+  font-size: 60px;
+  color: #74cfae;
+  width: 180px;
+  padding: 20px 0;
   transition: 0.3s;
 }
 
+.sns-icon:hover{
+  background-color: #fff;
+  transition: 0.3s;
+}
 /* --nav-- */
 
 /* footer */

@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
+    <meta name="discription" content="This is my portfolio site.">
+    <meta name="keyword" content="bolt, bootstrap, portfolio">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta title="Bolt - Free Bootstrap 3 Theme">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,65 +15,78 @@
   </head>
   <body>
     <!--headerに背景色の指定、幅いっぱいのやつ-->
-    <header class="header">    
+    <header class="header">
         <!--このclassにコンテンツ幅の指定と中央寄せ-->
-      <div class="header-inner">
+      <div class="header-inner inner">
         <i class="fas fa-bolt"></i>
-        <a class="header-contact backcolor-green" href="">
+        <a href="" class="header-inner-contact backcolor-green hoverElement">
           contact
         </a>
       </div>
     </header>
-              
     <main>
-        <!--このclassに背景色の指定、幅いっぱいのやつ-->
-      <div class="main-title backcolor-gray "> 
-          <!--このclassにコンテンツ幅の指定と中央寄せ-->
-        <div class="main-title-inner">
-          <h1>Bolt Theme</h1>
-          <h2>FREE BOOTSTRAP THEMES</h2>
-        </div>    
+
+      <div class="main-title backcolor-gray">
+        <div class="main-title-inner inner">
+          <h1 class="main-Innertitle">Bolt Theme</h1>
+          <p class="main-title-innerText">FREE BOOTSTRAP THEMES</p>
+        </div>
       </div>
-      <section class = "section-wrap backcolor-green">        
-        <div class="section-inner">
+
+      <section class = "section-wrap backcolor-green">
+        <div class="section-inner inner">
           <img src="img/iphone.png" class = "iphone-image">
           <div class = "section-textArea">
-            <h3>WHAT WE CAN DO?</h3>
+            <h2 class="section-innerTitle common-fontsize">WHAT WE CAN DO?</h2>
             <p class = "section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
           </div>
         </div>
       </section>
-      <article>
-        <div class="article-wrap backcolor-gray">
-          <h4>OUR LATEST WORK</h4>
-          <div class="image-content">
-            <img src="img/01.jpg" alt="" class="imageIn">
-            <img src="img/02.jpg" alt="" class="imageIn">
-            <img src="img/03.jpg" alt="" class="imageIn">
-            <img src="img/04.jpg" alt="" class="imageIn">
-            <img src="img/05.jpg" alt="" class="imageIn">
-            <img src="img/06.jpg" alt="" class="imageIn">
+
+      <article class="article-wrap backcolor-gray">
+        <div class="article-inner inner">
+          <h2 class="article-innerTitle common-fontsize">OUR LATEST WORK</h2>
+          <div class="article-image-wrap">
+            <a href="" class="article-imageContent hoverElement">
+              <img src="img/01.jpg" alt="" class="article-image">
+            </a>
+            <a href="" class="article-imageContent hoverElement">
+                <img src="img/02.jpg" alt="" class="article-image">
+              </a>
+            <a href="" class="article-imageContent hoverElement">
+              <img src="img/03.jpg" alt="" class="article-image">
+            </a>
+            <a href="" class="article-imageContent hoverElement">
+              <img src="img/04.jpg" alt="" class="article-image">
+            </a>
+            <a href="" class="article-imageContent hoverElement">
+              <img src="img/05.jpg" alt="" class="article-image">
+            </a>
+            <a href="" class="article-imageContent hoverElement">
+              <img src="img/06.jpg" alt="" class="article-image">
+            </a>
           </div>
           <div class="article-bottom">
             <p class = "article-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting 
-              industry. Lorem Ipsum has been the industry's standard dummy 
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
               text ever.
             </p>
-            <a class="e-mail backcolor-green" href="">
-                Email Me!
+            <a href="" class="e-mail backcolor-green  hoverElement">
+              Email Me!
             </a>
           </div>
         </div>
       </article>
-      <section class = "skills-section">
-        <div class="skills-section-inner">
-          <h5>OUR SKILLS</h5>
+
+      <section class = "skills-section-wrap">
+        <div class="skills-section-inner inner">
+          <h2 class="skills-section-innerTitle common-fontsize">OUR SKILLS</h2>
           <div class="section-imageArea">
             <figure class = "skills-section-content">
-              <img src="img/circle_01.png" alt="" class = "circle-image">
+                <img src="img/circle_01.png" alt="" class = "circle-image">
               <p class="circle-text">Javascript</p>
             </figure>
             <figure class = "skills-section-content">
@@ -79,7 +96,7 @@
             <figure class = "skills-section-content">
               <img src="img/circle_03.png" alt="" class = "circle-image">
               <p class="circle-text">WordPress</p>
-            </figure> 
+            </figure>
             <figure class = "skills-section-content">
               <img src="img/circle_04.png" alt="" class = "circle-image">
               <p class="circle-text">PhotosShop</p>
@@ -87,21 +104,32 @@
           </div>
         </div>
       </section>
+
       <nav class="sns-nav backcolor-gray">
-        <div class="sns-inner">
-          <a class="sns-icon fab fa-facebook-f" href=""></a>
-          <a class="sns-icon fas fa-basketball-ball" href=""></a>
-          <a class="sns-icon fab fa-twitter" href=""></a>
-          <a class="sns-icon fas fa-envelope" href=""></a> 
+        <div class="sns-inner inner">
+          <a href="" class="sns-icon hoverElement">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="sns-icon hoverElement">
+            <i class="fas fa-basketball-ball"></i>
+          </a>
+          <a href="" class="sns-icon hoverElement">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="sns-icon hoverElement">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </nav>
+
     </main>
-      <!--このclassに背景色の指定、幅いっぱいのやつ-->     
-    <footer class="footer backcolor-green">    
+      <!--このclassに背景色の指定、幅いっぱいのやつ-->
+    <footer class="footer backcolor-green">
         <!--このclassにコンテンツ幅の指定と中央寄せ-->
-      <div class="footer-inner">
+      <div class="footer-inner inner">
         Crafted with <i class="fas fa-heart"></i> Black Tie.co
-      </div>    
+      </div>
     </footer>
+
   </body>
 </html>
