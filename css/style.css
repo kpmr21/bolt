@@ -137,7 +137,7 @@ flex-wrap: wrap;
   margin-right: 0;
 }
 
-.article-imageContent:nth-last-child(3){
+.article-imageContent:nth-child(n+4){
   margin-bottom: 0;
 }
 
