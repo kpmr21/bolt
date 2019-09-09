@@ -220,7 +220,7 @@ flex-wrap: wrap;
 .sns-icon{
   font-size: 60px;
   color: #74cfae;
-  width: 180px;
+  width: 25%;
   padding: 20px 0;
   transition: 0.3s;
 }
@@ -273,7 +273,7 @@ flex-wrap: wrap;
 }
 
 .section-text{
-  width:500px;
+  width:100%;
 }
 /* --main section-- */
 
@@ -301,7 +301,7 @@ flex-wrap: wrap;
 }
 
 .article-text{
-  width: 850px;
+  width: 100%;
   height: auto;
   margin-bottom: 40px;
 }
@@ -324,8 +324,13 @@ flex-wrap: wrap;
 .skills-section-content:last-child{
   margin-bottom: 0;
 }
-/* main skills-section */
+/* --main skills-section-- */
 
+/* nav */
+.sns-icon{
+  width: 25%;
+}
+/* --nav-- */
 }
 /* --Tablet 画面-- */
 
@@ -373,15 +378,9 @@ flex-wrap: wrap;
 
 .main-Innertitle{
   font-size: 80px;
-  width: 300px;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.main-title-innerText{
-  width: 300px;
-  margin: 0 auto;
-}
 /* main */
 
 /* main section */
@@ -400,7 +399,7 @@ flex-wrap: wrap;
 }
 
 .section-text{
-  width:335px;
+  width:100%;
 }
 
 /* main article */
@@ -427,7 +426,7 @@ flex-wrap: wrap;
 }
 
 .article-text{
-  width: 300px;
+  width: 100%;
   height: auto;
   margin-bottom: 40px;
 }
@@ -462,10 +461,11 @@ flex-wrap: wrap;
 
 .sns-inner{
   display: inline-grid;
+  justify-content: unset;
 }
 
 .sns-icon{
-  width: 767px;
+  width: 100%;
 }
 /* --main sns-nav--*/
 }
