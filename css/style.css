@@ -5,6 +5,10 @@ body{
   font-family: "Lato";
 }
 
+a{
+  display: inline-block;
+}
+
 .inner{
   margin: 0 auto;
   width: 1100px;
@@ -160,7 +164,6 @@ flex-wrap: wrap;
 
 .article-text{
   width: 500px;
-  height: 40px;
 }
 
 .e-mail{
@@ -169,6 +172,7 @@ flex-wrap: wrap;
   width: 100px;
   margin-left: 90px;
   transition: 0.3s;
+  display: table;
 }
 
 .e-mail:hover{
@@ -189,7 +193,7 @@ flex-wrap: wrap;
   font-family: "Raleway";
 }
 
-.section-imageArea{
+.skills-section-imageArea{
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -220,7 +224,7 @@ flex-wrap: wrap;
 .sns-icon{
   font-size: 60px;
   color: #74cfae;
-  width: 25%;
+  width: 185px;
   padding: 20px 0;
   transition: 0.3s;
 }
@@ -250,39 +254,39 @@ flex-wrap: wrap;
 
 /* Tablet 画面 */
 
-@media screen and (min-width:768px) and (max-width:1119px){
-/* 共通部分 */
-.inner{
-  margin: 0 auto;
-  width: 97%;
-}
-/* --共通部分-- */
+@media screen  and (min-width:768px) and (max-width:1119px){
+  /* 共通部分 */
+  .inner{
+    width: 97%;
+  }
+  /* --共通部分-- */
 
-/* main section */
-.section-wrap{
-  padding-bottom: 25px;
-}
+  /* main section */
+  .section-wrap{
+    padding-bottom: 25px;
+  }
 
-.section-inner{
-  display: grid;
-}
+  .section-inner{
+    display: block;
+  }
 
-.iphone-image{
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
+  .iphone-image{
+    margin: 0;
+    margin-bottom: 20px;
+  }
 
-.section-text{
-  width:100%;
-}
-/* --main section-- */
+  .section-text{
+    width: 100%;
+  }
+  /* --main section-- */
 
-/* main article */
+  /* main article */
 .article-image-wrap{
-  display: inline-grid;
+  display: inline-block;
 }
 
-.article-imageContent{
+  .article-imageContent{
+  display: block;
   margin: 0;
   font-size: 0;
 }
@@ -297,23 +301,22 @@ flex-wrap: wrap;
 
 .article-bottom{
   margin-top: 80px;
-  display: grid;
+  display: inline-block;
 }
 
 .article-text{
   width: 100%;
-  height: auto;
   margin-bottom: 40px;
 }
 
 .e-mail{
   margin: 0 auto;
 }
-/* --main article-- */
+  /* --main article-- */
 
-/* main skills-section */
-.section-imageArea{
-  display: grid;
+  /* main skills-section */
+.skills-section-imageArea{
+  display: block;
 }
 
 .skills-section-content{
@@ -324,89 +327,76 @@ flex-wrap: wrap;
 .skills-section-content:last-child{
   margin-bottom: 0;
 }
-/* --main skills-section-- */
+  /* --main skills-section-- */
 
-/* nav */
+  /* nav */
 .sns-icon{
   width: 25%;
 }
-/* --nav-- */
-}
-/* --Tablet 画面-- */
-
-/* smartPhone 画面 */
-@media screen and (max-width:767px){
-.inner{
-    margin: 0 auto;
-    width: 97%;
+  /* --nav-- */
   }
+  /* --Tablet 画面-- */
+/* smartPhone 画面 */
+  @media screen and (max-width:767px){
+.inner{
+  margin: 0 auto;
+  width: 97%;
+}
+
 /* header */
+
 .header-inner-contact{
   display: none;
 }
 
-.nav-open {
+.nav-open{
   display: inline-block;
-  padding: 10px;
+  padding:10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  width: 25px;
 }
 
-.nav-open span, .nav-open span:before, .nav-open span:after {
-  position: absolute;
+.nav-open span{
   height: 3px;
   width: 25px;
   border-radius: 3px;
   background: #ddd;
   display: block;
-  content: '';
-  cursor: pointer;
+  margin-bottom: 4px;
 }
-.nav-open span:before {
-  bottom: -8px;
-}
-.nav-open span:after {
-  bottom: -16px;
+
+.nav-open span:last-child{
+  margin-bottom: 0;
 }
 /* --header-- */
 
 /* main */
-.main-title-inner {
+.main-title-inner{
   padding: 160px 0 130px 0;
 }
 
-.main-Innertitle{
+.main-Innertitlea{
   font-size: 80px;
-  margin-bottom: 20px;
 }
-
-/* main */
-
 /* main section */
 .section-wrap{
   padding-bottom: 25px;
-
 }
 
 .section-inner{
-  display: grid;
+  display: block;
 }
 
 .iphone-image{
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 .section-text{
-  width:100%;
+  width: 100%;
 }
+/* --main section-- */
 
 /* main article */
-.article-image-wrap{
-  display: inline-grid;
-}
-
 .article-imageContent{
   margin: 0;
   font-size: 0;
@@ -422,26 +412,22 @@ flex-wrap: wrap;
 
 .article-bottom{
   margin-top: 80px;
-  display: grid;
+  display: inline-block;
 }
 
 .article-text{
   width: 100%;
-  height: auto;
   margin-bottom: 40px;
 }
 
 .e-mail{
-  margin: 0 auto;
+  display: block;
 }
 /* --main article-- */
-.section-imageArea{
-  display: inline-grid;
-}
 
 /* main skills-section */
-.section-imageArea{
-  display: grid;
+.skills-section-imageArea{
+  display: block;
 }
 
 .skills-section-content{
@@ -449,10 +435,11 @@ flex-wrap: wrap;
   margin-bottom: 88px;
 }
 
+
 .skills-section-content:last-child{
   margin-bottom: 0;
 }
-/* main skills-section */
+/* --main skills-section-- */
 
 /* main sns-nav */
 .sns-nav{
@@ -460,13 +447,14 @@ flex-wrap: wrap;
 }
 
 .sns-inner{
-  display: inline-grid;
-  justify-content: unset;
+  display: block;
 }
 
 .sns-icon{
   width: 100%;
 }
-/* --main sns-nav--*/
-}
-/* --smartPhone 画面-- */
+/* --main sns-nav-- */
+
+/* --main-- */
+  }
+/* --smartPhone 画面-- */
