@@ -164,6 +164,7 @@ flex-wrap: wrap;
 
 .article-text{
   width: 500px;
+  line-height: 15px;
 }
 
 .e-mail{
@@ -172,7 +173,6 @@ flex-wrap: wrap;
   width: 100px;
   margin-left: 90px;
   transition: 0.3s;
-  display: table;
 }
 
 .e-mail:hover{
@@ -310,7 +310,7 @@ flex-wrap: wrap;
 }
 
 .e-mail{
-  margin: 0 auto;
+  margin: 0;
 }
   /* --main article-- */
 
@@ -388,7 +388,7 @@ flex-wrap: wrap;
 }
 
 .iphone-image{
-  margin: 0 auto;
+  margin: 0;
 }
 
 .section-text{
@@ -397,9 +397,14 @@ flex-wrap: wrap;
 /* --main section-- */
 
 /* main article */
+.article-image-wrap{
+  display: inline-block;
+}
+
 .article-imageContent{
   margin: 0;
   font-size: 0;
+  display: block;
 }
 
 .article-imageContent:nth-child(3n){
