@@ -339,7 +339,6 @@ flex-wrap: wrap;
 /* smartPhone 画面 */
   @media screen and (max-width:767px){
 .inner{
-  margin: 0 auto;
   width: 97%;
 }
 
@@ -427,6 +426,7 @@ flex-wrap: wrap;
 
 .e-mail{
   display: block;
+  margin: 0 auto;
 }
 /* --main article-- */
 
